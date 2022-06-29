@@ -72,6 +72,8 @@ test {
     useJUnitPlatform()
 }
 
+
+
 task web(type: Test) {
     useJUnitPlatform {
         includeTags 'web'
@@ -79,6 +81,19 @@ task web(type: Test) {
     systemProperty 'platform', 'web'
 }
 
+task android(type: Test) {
+    useJUnitPlatform {
+        includeTags 'android'
+    }
+    systemProperty 'platform', 'android'
+}
+
+task ios(type: Test) {
+    useJUnitPlatform {
+        includeTags 'ios'
+    }
+    systemProperty 'platform', 'ios'
+}
 
 
 
