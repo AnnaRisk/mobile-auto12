@@ -32,7 +32,7 @@ allure {
 dependencies {
     testImplementation (
             "org.aspectj:aspectjweaver:1.9.5",
-     //       "com.codeborne:selenide:${selenideVersion}",
+            "com.codeborne:selenide:${selenideVersion}",
             "io.qameta.allure:allure-selenide:${allureVersion}",
             "io.rest-assured:rest-assured:4.1.2",
             "io.qameta.allure:allure-rest-assured:${allureVersion}",
